@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    {% include 'layouts/title.html' %}
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+
+    {% block css %}{% endblock %}
+</head>
+<body>
+    {% if fullscreen is not defined or not fullscreen %}
+        {% include "layouts/navbar.html" %}
+    {% endif %}
+
+    <div class="wrapper" id="app">
+        {% block content %}{% endblock %}
+    </div>
+    
+    {% block js %}{% endblock %}
+</body>
+</html>

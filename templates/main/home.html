@@ -1,0 +1,59 @@
+{% extends 'layouts/master.html' %}
+
+{% block content %}
+    <div class="home-cover">
+        <div class="home-cover-bg"></div>
+        <div class="home-cover-content d-flex align-items-center justify-content-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-7">
+                        <h1 class="display-4 text-white mb-3">prinus</h1>
+                        <p class="text-white mb-4">
+                            Unique Description about what we do.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nesciunt odio, aperiam, et quidem doloremque voluptates porro perspiciatis modi pariatur cupiditate deleniti.
+                        </p>
+                        <button class="btn btn-lg btn-success px-4">
+                            Call to Action
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+
+{% block css %}
+    <style>
+        :root {
+            --home-cover-height: 480px;
+        }
+        
+        .home-cover {
+            position: relative;
+        }
+        .home-cover::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: var(--home-cover-height);
+            background-image: url('{{ asset('img/home-cover.jpg') }}');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: grayscale(70%);
+        }
+        .home-cover > .home-cover-bg {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: var(--home-cover-height);
+            background: rgb(216,57,57);
+            background: linear-gradient(90deg, rgba(216,57,57,1) 0%, rgba(216,57,57,0.7870681719953606) 30%, rgba(255,255,255,0) 100%); 
+        }
+        .home-cover > .home-cover-content {
+            position: relative;
+            width: 100%; height: var(--home-cover-height);
+        }
+    </style>
+{% endblock %}
