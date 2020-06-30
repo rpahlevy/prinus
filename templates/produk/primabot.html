@@ -1,8 +1,137 @@
 {% extends 'layouts/master.html' %}
 
 {% block content %}
-    <div class="container-fluid">
-        Hello!!
-        <button class="btn btn-primary">what</button>
+    <header class="py-5">
+        <div class="container">
+            <h1 class="text-primary mb-4">primaBot</h1>
+            <p class="lead">
+                Merupakan perangkat alat elektronik yang dapat memberikan ukur curah hujan, tinggi muka air, yang dikirim ke pusat data setiap 5 menit.
+                primaBot dibuat dengan pola pikir lapangan, yaitu daya rendah, mudah ditransportasikan, mudah dipasang dan mudah dikonfigurasi. 
+            </p>
+            <p class="lead">
+                Perangkat yang dikemas dalam satu papan rangkaian tercetak untuk semua fungsi, mengurangi potensi kegagalan. 
+            </p>
+        </div>
+    </header>
+
+    <div class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-7">
+                    <img src="{{ asset('img/primabot-1.png') }}" alt="" class="img-fluid w-100">
+                </div>
+                <div class="col-12 col-lg-5">
+                    <h2 class="h3 mb-4">
+                        Penampilan Utama
+                    </h2>
+                    <ul class="lead">
+                        <li>Ukuran Kecil</li>
+                        <li>Daya Rendah</li>
+                        <li>Sistem Konfigurasi Terpusat</li>
+                        <li>Biaya Operasi Rendah</li>
+                        <li>Komunikasi dengan Data Center melalui Internet</li>
+                        <li>Menghasilkan Data Linkungan (Temperatur, Kelembapan, Elevasi, Kuat Sinyal, Tegangan Baterai)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <br>
+            <hr>
+            <br>
+
+            <h2 class="h3 mb-2">
+                Varian Produk
+            </h2>
+            <p class="lead mb-4">
+                primaBot memiliki beberapa varian produk, yakni:
+            </p>
+            <div class="row">
+                <div class="col-6 col-lg-4">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <h3 class="h4 text-primary font-weight-normal mb-3">
+                                Prima ARR
+                            </h3>
+                            <p class="mb-0">
+                                Varian ini ditujukan untuk mengukur curah hujan. Dapat dihubungkan dengan Automatic Rain Gauge.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <h3 class="h4 text-primary font-weight-normal mb-3">
+                                Prima Sonar
+                            </h3>
+                            <p class="mb-0">
+                                Varian untuk mengukur Tinggi Muka Air dengan menggunakan sensor Pressure.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <h3 class="h4 text-primary font-weight-normal mb-3">
+                                Prima Pressure
+                            </h3>
+                            <p class="mb-0">
+                                Varian terakhir adalah alat untuk mengukur tekanan udara.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-5">
+        <div class="container">
+            <h2 class="h3 mb-2">Spesifikasi</h2>
+            <p class="lead mb-4">
+                Berikut adalah spesifikasi Hardware dari primaBot:
+            </p>
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <h3 class="h4 text-primary mb-4">
+                        A. Prosesor
+                    </h3>
+                    <ul>
+                        <li>Atmel(R) low power CMOS 8-bit AVR(R) RISC arsitektur</li>
+                        <li>Flash program memory: 32KByte</li>
+                        <li>EEPROM: 1KByte</li>
+                        <li>Static RAM: 2KByte</li>
+                        <li>Temperature: -40​o​C - 105​o​C</li>
+                        <li>Speed: 8MHz</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-4 border-right border-left">
+                    <h3 class="h4 text-primary mb-4">
+                        B. Modem
+                    </h3>
+                    <ul>
+                        <li>SIM800L, Quad band GSM/GPRS (GSM 850MHz, EGSM 900MHz, DSC 1800MHz, PCS 1900MHz)</li>
+                        <li>GPRS Multi slot class 12</li>
+                        <li>Embedded protocol TCP/UDP</li>
+                        <li>SIM Card interface: 3V / 1.8V</li>
+                        <li>Sertifikasi: CE/GCF/ROHS/REACH</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <h3 class="h4 text-primary mb-4">
+                        C. Sensor Lingkungan
+                    </h3>
+                    <ul>
+                        <li>BME280, Relative Humidity, Ambient Temperature, Barometric Pressure and Altitude.</li>
+                        <li>Temperatur operasi: 0 - 50​o​C</li>
+                        <li>Dimensi: 11cm X 11cm X 5cm</li>
+                        <li>Berat: 0.2 Kg </li>
+                        <li>Catu Daya: 6-12V DC</li>
+                        <li>Daya: &lt; 0.5 Watt</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 {% endblock %}
