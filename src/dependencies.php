@@ -23,25 +23,25 @@ $container['view'] = function ($c) {
     return $view;
 };
 
-// not found handler
-$container['notFoundHandler'] = function($c) {
-    return function (Request $request, Response $response) use ($c) {
-        return $c->view->render($response->withStatus(404), 'errors/404.html');
-    };
-};
+// // not found handler
+// $container['notFoundHandler'] = function($c) {
+//     return function (Request $request, Response $response) use ($c) {
+//         return $c->view->render($response->withStatus(404), 'errors/404.html');
+//     };
+// };
 
-// error handler
-if (!$container->get('settings')['debugMode'])
-{
-    $container['errorHandler'] = function($c) {
-        return function ($request, $response) use ($c) {
-            return $c->view->render($response->withStatus(500), 'errors/500.html');
-        };
-    };
-    $container['phpErrorHandler'] = function ($c) {
-        return $c['errorHandler'];
-    };
-}
+// // error handler
+// if (!$container->get('settings')['debugMode'])
+// {
+//     $container['errorHandler'] = function($c) {
+//         return function ($request, $response) use ($c) {
+//             return $c->view->render($response->withStatus(500), 'errors/500.html');
+//         };
+//     };
+//     $container['phpErrorHandler'] = function ($c) {
+//         return $c['errorHandler'];
+//     };
+// }
 
 // flash messages
 $container['flash'] = function() {

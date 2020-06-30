@@ -19,6 +19,12 @@
     <div class="wrapper" id="app">
         {% block content %}{% endblock %}
     </div>
+
+    <footer class="bg-dark text-light py-3">
+        <div class="container small">
+            &copy; 2017-{{ 'now'|date('Y') }} prinus. All Rights Reserved.
+        </div>
+    </footer>
     
     {% block js %}{% endblock %}
 </body>
