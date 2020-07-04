@@ -70,3 +70,7 @@ $app->get('/produk/{slug}[/]', function (Request $request, Response $response, $
     $p = $produk[$slug];
     return $this->view->render($response, 'produk/'. $p['page']);
 });
+
+$app->get('/informasi[/]', function (Request $request, Response $response, $args) {
+    return $this->view->render($response, 'main/informasi.html');
+});
