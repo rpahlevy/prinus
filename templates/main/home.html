@@ -35,7 +35,7 @@
                 {% for p in produk %}
                     <div class="col-6 col-md-4 col-lg-3 mb-4">
                         <a href="{{ p['page'] ? url('produk/' ~ p['slug']) : '#produk' }}" class="card bg-transparent border-0 h-100 text-decoration-none">
-                            <img src="{{ asset('img/avatar.png') }}" alt="" class="card-img-top shadow">
+                            <img src="{{ asset('img/' ~ p['image']) }}" alt="" class="card-img-top shadow">
                             <div class="card-body bg-transparent">
                                 <h5 class="text-center font-weight-normal">{{ p['name'] }}</h5>
                                 {# <p class="text-secondary mb-0">{{ p['desc'] }}</p> #}
