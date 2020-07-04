@@ -1,0 +1,78 @@
+{% extends 'layouts/master.html' %}
+
+{% block content %}
+    <header class="py-5">
+        <div class="container">
+            <h1 class="text-primary mb-4">primaBase</h1>
+            <p class="lead">
+                Merupakan paket software yang berfungsi untuk menerima data periodik dari primaGateway dan fungsi manajemen data Hujan dan Tinggi Muka Air serta data pendukung.
+                primaBase melakukan penerimaan data dan manajemen data dasar sdan fungsi-fungsi untuk menjaga sistem telemetri berjalan baik.
+            </p>
+            <p class="lead">
+                <span class="text-primary">Catatan.</span> Software primaBase harus jalan pada salah satu komputer di kantor (Hidrologi).
+            </p>
+        </div>
+    </header>
+
+    <div class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-3 order-lg-1 offset-lg-3">
+                    <img src="{{ asset('img/primabase-1.png') }}" alt="" class="img-fluid w-100">
+                </div>
+                <div class="col-12 col-lg-5 order-lg-0">
+                    <h2 class="h3 mb-4">
+                        Penampilan Utama
+                    </h2>
+                    <ul class="lead">
+                        <li>Software Aplikasi berbasis Web</li>
+                        <li>Jalan dalam lingkungan LAN (private)</li>
+                        <li>Menggunakan sebagian besar software Open Source</li>
+                        <li>Memungkinkan diakses melalui Smartphone pada lingkungan kantor</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-5">
+        <div class="container">
+            <h2 class="h3 mb-2">Kebutuhan primaBase</h2>
+            <p class="lead mb-4">
+                Untuk menjalankan primaBase dibutuhkan :
+            </p>
+            <div class="row">
+                <div class="col-12 col-lg-7 border-right">
+                    <h3 class="h4 text-primary mb-4">
+                        LAN dan koneksi Internet
+                    </h3>
+                    <p>
+                        LAN (Local Area Network) sagar memungkinkan primaBase diakses oleh beberapa komputer/laptop pada LAN.
+                        <br>
+                        <br>
+                        Wajib tersedia koneksi Internet 24 jam, diperlukan untuk dapat menerima data dari primaGateway.
+                        <br>
+                        <br>
+                        Internet dengan bandwidth 1 MegaBytepersecond sudah cukup.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <h3 class="h4 text-primary mb-4">
+                        PC / Server
+                    </h3>
+                    <ul>
+                        <li>Prosesor dengan multicore atau single core</li>
+                        <li>kecepatan clock 2.4GHz,</li>
+                        <li>RAM / Memory 2GB,</li>
+                        <li>Hardisk 250GB,</li>
+                        <li>Ethernet 1Gbit</li>
+                        <li>Speed: 8MHz</li>
+                        <li>Sistem Operasi Ubuntu Server 16.04 LTS</li>
+                        <li>Database Postgresql versi 9.6</li>
+                        <li>Python 2.7</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
