@@ -18,6 +18,13 @@ $produk = [
         'desc' => 'Paket software yang berfungsi untuk menerima data periodik dari primaGateway dan fungsi manajemen data Hujan dan Tinggi Muka Air serta data pendukung.',
         'page' => 'primabase.html',
     ],
+    'primaweb' => [
+        'name' => 'primaWeb',
+        'slug' => 'primaweb',
+        'image' => 'logo-primaweb.png',
+        'desc' => 'Adalah alat bantu untuk mendiagnosa masalah yang terjadi pada Logger primaBot.',
+        'page' => 'primaweb.html',
+    ],
     'primagateway' => [
         'name' => 'primaGateway',
         'slug' => 'primagateway',
@@ -43,13 +50,6 @@ $produk = [
         'name' => 'primaConsole',
         'slug' => 'primaconsole',
         'image' => 'logo-primaconsole.png',
-        'desc' => 'Adalah alat bantu untuk mendiagnosa masalah yang terjadi pada Logger primaBot.',
-        'page' => '',
-    ],
-    'primaweb' => [
-        'name' => 'primaWeb',
-        'slug' => 'primaweb',
-        'image' => 'logo-primaweb.png',
         'desc' => 'Adalah alat bantu untuk mendiagnosa masalah yang terjadi pada Logger primaBot.',
         'page' => '',
     ],

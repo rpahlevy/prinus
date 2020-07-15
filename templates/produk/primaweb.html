@@ -1,0 +1,57 @@
+{% extends 'layouts/master.html' %}
+
+{% block content %}
+    <header class="py-5">
+        <div class="container">
+            <h1 class="text-primary mb-4">primaWeb</h1>
+            <p class="lead">
+                Adalah alat bantu untuk mendiagnosa masalah yang terjadi pada Logger primaBot serta untuk memonitor &amp; analisa Logger dan Lokasi dari primaBot.
+            </p>
+        </div>
+    </header>
+
+    <div class="py-5 bg-light">
+        <div class="container">
+            <h2 class="h3 mb-4 border-bottom border-dark d-inline-block">
+                Fitur primaWeb
+            </h2>
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <div class="card bg-transparent border-0 h-100">
+                        <img src="{{ asset('img/primaweb/daftar_logger.png') }}" alt="" class="card-img-top shadow-sm">
+                        <div class="card-body px-0 py-2">
+                            <p class="mb-0">Data Logger Terbaru</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="card bg-transparent border-0 h-100">
+                        <img src="{{ asset('img/primaweb/kesehatan_logger.png') }}" alt="" class="card-img-top shadow-sm">
+                        <div class="card-body px-0 py-2">
+                            <p class="mb-0">Kesehatan Logger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="card bg-transparent border-0 h-100">
+                        <img src="{{ asset('img/primaweb/daftar_location.png') }}" alt="" class="card-img-top shadow-sm">
+                        <div class="card-body px-0 py-2">
+                            <p class="mb-0">Monitor Berdasarkan Lokasi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="card bg-transparent border-0 h-100">
+                        <img src="{{ asset('img/primaweb/dark_mode.png') }}" alt="" class="card-img-top shadow-sm">
+                        <div class="card-body px-0 py-2">
+                            <p class="mb-0">Mode Gelap</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {# <p class="lead mb-4">
+                subjudul
+            </p> #}
+        </div>
+    </div>
+{% endblock %}
